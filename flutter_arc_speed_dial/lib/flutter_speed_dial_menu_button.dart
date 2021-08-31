@@ -20,6 +20,8 @@ class SpeedDialMenuButton extends StatefulWidget {
   final double mainFABPosX;
   final double mainFABPosY;
 
+  final Duration? animationDuration;
+
   /// The difference between the main Menu FAB and a speed dial FAB radius
   /// if not using [FloatingActionButton], this field is required to calculate manually
   /// in design
@@ -42,6 +44,7 @@ class SpeedDialMenuButton extends StatefulWidget {
       required this.isMainFABMini,
       required this.floatingActionButtonWidgetChildren,
       required this.isSpeedDialFABsMini,
+      this.animationDuration,
       this.mainFABPosX = 10.0,
       this.mainFABPosY = 10.0,
       this.paddingBtwSpeedDialButton = 20.0,
@@ -84,6 +87,7 @@ class _SpeedDialMenuButtonState extends State<SpeedDialMenuButton> {
       paddingBtwSpeedDialButton: widget.paddingBtwSpeedDialButton,
       mainFABPosX: widget.mainFABPosX,
       mainFABPosY: widget.mainFABPosY,
+      animationDuration: widget.animationDuration,
     );
   }
 

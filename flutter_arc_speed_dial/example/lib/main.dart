@@ -49,6 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
         //return any open or close change within the widget
         this._isShowDial = isShow;
       },
+      animationDuration: Duration(milliseconds: 500),
       //general init
       isMainFABMini: false,
       mainMenuFloatingActionButton: MainMenuFloatingActionButton(
